@@ -28,4 +28,18 @@ public class Tune
 	{
 		return notation;
 	}
+	
+	public String toString()
+	{
+		StringBuffer sb = new StringBuffer();
+		
+		if(this.altTitle == NULL)
+		{
+			sb.append(this.x + ", " this.title)
+		}
+		else
+		{
+			sb.append(this.x + ", " + this.title + ", " + this.altTitle)
+		}
+	}
 }
