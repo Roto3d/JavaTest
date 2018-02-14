@@ -1,6 +1,7 @@
 package ie.dit;
 
 import java.io.BufferedReader;
+import java.lang;
 
 public class Tune
 {
@@ -33,13 +34,32 @@ public class Tune
 	{
 		StringBuffer sb = new StringBuffer();
 		
-		if(this.altTitle == NULL)
+		if(getAltTitle(altTitle) == NULL)
 		{
-			sb.append(this.x + ", " this.title)
+			sb.append(getX(x) + ", " getTitle(title).title)
 		}
 		else
 		{
-			sb.append(this.x + ", " + this.title + ", " + this.altTitle)
+			sb.append(getX(x) + ", " + getTitle(title) + ", " + getAltTitle(altTitle))
+		}
+	}
+	
+	interface Player
+	{
+		public void play();
+	}
+	
+	public class Playermethod implements Player
+	{
+		public void play()
+		{
+			System.out.println(getNotation(notation))
+		}
+		
+		public static void main(String args[])
+		{
+			Playermethod player = new Player();
+			m.play();
 		}
 	}
 }
