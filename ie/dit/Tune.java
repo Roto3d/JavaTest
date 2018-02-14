@@ -1,5 +1,7 @@
 package ie.dit;
 
+import java.io.BufferedReader;
+
 public class Tune
 {
 	private int x;
